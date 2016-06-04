@@ -5,3 +5,4 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 ### Added
 - Chef repository for managing infrastructure.
+- Automated testing and continuous integration.
