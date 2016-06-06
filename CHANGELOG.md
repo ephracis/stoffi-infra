@@ -6,3 +6,4 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Chef repository for managing infrastructure.
 - Automated testing and continuous integration.
+- Vagrant for creating and provisioning virtual machines.
