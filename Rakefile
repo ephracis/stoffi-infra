@@ -1,30 +1,19 @@
 namespace :test do
-  task all: [:rubocop, :foodcritic, :unit, :integration]
-
-  desc 'Run unit tests using ChefSpec'
-  task :unit do
-    cookbooks = Dir.glob('cookbooks/*').select { |f| File.directory? f }
-    cookbooks.each do |cookbook|
-      Dir.chdir cookbook do
-        sh 'chef exec rspec'
-      end
-    end
-    sh 'chef exec rspec'
-  end
+  task all: [:rubocop, :foodcritic, :kitchen]
 
   desc 'Run integration tests using TestKitchen'
-  task :integration do
-    sh 'kitchen verify'
+  task :kitchen do
+    sh 'bundle exec kitchen test -d always'
   end
 
   desc 'Lint the cookbook using FoodCritic'
   task :foodcritic do
-    sh 'foodcritic -f any -B cookbooks -P -R roles'
+    sh 'bundle exec foodcritic -f any -P -R roles'
   end
 
   desc 'Lint the ruby code using rubocop'
   task :rubocop do
-    sh 'rubocop'
+    sh 'bundle exec rubocop --display-cop-names'
   end
 end
 

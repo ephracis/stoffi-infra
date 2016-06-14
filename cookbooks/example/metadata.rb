@@ -1,7 +1,0 @@
-name 'example'
-description 'An example cookbook'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
-version '1.0.0'
-issues_url 'http://github.com/stoffi-infra/issues'
-source_url 'http://github.com/stoffi-infra'

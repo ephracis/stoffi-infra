@@ -1,0 +1,9 @@
+{
+  "id": "ephracis",
+  "comment": "Christoffer Reijer",
+  "groups": ["sysadmin"],
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDJ/QsDtGfhtZk8pUn6KXsvltO5wlIEzcBTdgLgPpzAkZsIGyUuXBNr7mAAeaqHfyzPz76MBDyrNvjf3UBd69ooKrLno0KWRr4w0mHHYkYJc4w70WqUMvMSgwyOcoU21ifywk7x9FqbmEEfnfR+yM3L/2ouTNTNLnc6mVXHERSLDsE0CMLt2hjk2A+w3laQFf7YT2YCE49aHvN15IzaYy4vz99nELuzfZ++2q7kvTN1mQCMwATzgC0NhMlRvmd5qjdsJpDVf+/4N70AVZshh/8KZB5/cg7/5maficArX20nBGcGLEapbcWQ0bGuG6ncKyLxlFD85BH/8/Fchmk4+32d ephracis@themisto"
+  ],
+  "shell": "/bin/zsh"
+}

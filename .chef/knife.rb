@@ -8,4 +8,5 @@ client_key               "#{current_dir}/ephracis.pem"
 validation_client_name   "simplare-validator"
 validation_key           "#{current_dir}/simplare-validator.pem"
 chef_server_url          "https://api.chef.io/organizations/simplare"
-cookbook_path            ["#{current_dir}/../cookbooks"]
+cookbook_path            ["#{current_dir}/../cookbooks", "#{ENV['HOME']}/Development/cookbooks"]
+mode                    'client'

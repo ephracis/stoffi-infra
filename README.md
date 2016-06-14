@@ -14,7 +14,9 @@ Perform the following before running Vagrant:
 - Install awscli
 - Set up a Chef server, get the Starter Kit and extract and replace the .chef folder.
 - `bundle install`
-- `aws configure`
-- `knife cookbook upload -a`
+- `aws configure` # NOTE: for now you must specify the env vars as well
+- `knife upload data_bags`
+- `berks install`
+- `berks upload`
 
 You can now run `vagrant up` and spin up a dev/test machine.
